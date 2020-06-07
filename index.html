@@ -5,6 +5,10 @@
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168579593-1"></script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript" src="js/smtp.js"></script>
+  
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -992,7 +996,7 @@
                     <div class="block-title">
                       <h3>Contact <span>Form</span></h3>
                     </div>
-                    <form id="contact-form" method="post" action="https://lmpixels.com/demo/procard/contact_form/contact_form.php">
+                    <form id="contact-form" method="post">
 
                       <div class="messages"></div>
 
@@ -1023,7 +1027,7 @@
 
                         <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
 
-                        <input type="submit" class="button btn-send" value="Send message">
+                        <input type="submit" class="button btn-send" value="Send message" onclick="sendEmail()">
                       </div>
                     </form>
                   </div>
