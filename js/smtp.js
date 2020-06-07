@@ -10,6 +10,6 @@ function sendEmail(){
     Subject : fromName.value+" has sent this from my Resume site",
     Body : message.value
 	}).then(
-	  message => alert(message)
+	  message => alert("!Your message was successfully sent! I'll get back to you soon!!!")
 	);
 }
