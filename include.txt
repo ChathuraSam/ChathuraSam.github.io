@@ -40,3 +40,7 @@ Digital Badges
 Hobbies
 - Playing guitar
 - Watching movies
+
+
+Projects
+- Mad Movie Andoid App

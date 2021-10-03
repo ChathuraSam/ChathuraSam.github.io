@@ -194,7 +194,7 @@
                       <li><span class="title">Name</span><span class="value">Chathura Samarajeewa</span></li>
                       <li><span class="title">Country</span><span class="value">Sri Lanka</span></li>
                       <li><span class="title">City</span><span class="value">Bandarawela</span></li>
-                      <li><span class="title">Age</span><span class="value">27</span></li>
+                      <li><span class="title">Birthday</span><span class="value">5<sup>th</sup> March</span></li>
 
                     </ul>
                   </div>
@@ -1245,7 +1245,7 @@
                     <div class="block-title">
                       <h3>Contact <span>Form</span></h3>
                     </div>
-                    <form id="contact-form" method="post">
+                    <form class="gform" method="POST" data-email="" action="https://script.google.com/macros/s/AKfycbybeXvcg5vdlm_hFBo3zRBWdL5MtFqxv9VhUlSAwYXDh2ao_UnhEIS-JNJgzrP1oi_lcw/exec">
 
                       <div class="messages"></div>
 
@@ -1279,7 +1279,12 @@
 
                         <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
 
-                        <input type="submit" class="button btn-send" value="Send message" onclick="sendEmail()">
+                        <div style="display:none" class="thankyou_message">
+                          <!-- You can customize the thankyou message by editing the code below -->
+                          <h2><em>Thanks</em> for contacting me! I will get back to you soon!
+                          </h2>
+                         </div>
+                        <input type="submit" class="button btn-send" value="Send Message">
                       </div>
                     </form>
                   </div>
@@ -1320,6 +1325,8 @@
   <!-- Demo Color changer Script -->
   <script src="preview/lmpixels-demo-panel.js"></script>
   <!-- /Demo Color changer Script -->
+
+  <script src="js/form-submission-handler.js"></script>
 </body>
 
 <!-- Mirrored from lmpixels.com/demo/procard/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jun 2020 17:50:36 GMT -->
