@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@mixin flex($jus: center, $alg: center){
+    display: flex;
+    justify-content: $jus;
+    align-items: $alg;
+}
+@mixin dimension($ln, $hg){
+    width: $ln;
+    height: $hg;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+html {
+    font-size: 12px;
+    @media (min-width: 700px) {
+      font-size: calc(10px + 0.5vw);
+    }
+    scroll-behavior: smooth;
+}
+
+
+
+header{
+    @include dimension(100vw, 35vh);
+    @include flex();
+    flex-direction: column;
+    background-color: #1e1e1e;
+    color: #7C40FF;
+    text-align: center;
+    border-top: 2px solid #7C40FF;
+    border-bottom: 2px solid #7C40FF;
+    .heading_section{
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 1.3rem;
+            color: #fff
+        }
+    }
+    .hidden_section{
+        @include dimension(100vw, 34vh);
+        display: none;
+        justify-content: space-evenly;
+        flex-direction: column;
+        font-size: 1.2rem;
+        p{
+            color: #7C40FF;
+            span{
+                color: #fff
+            }
+        }
+    }
+}
+
+.container{
+    @include dimension(100vw, 55vh);
+    @include flex(space-evenly,);
+    flex-direction: column;
+    input{
+        @include dimension(90vw, 10vh);
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        color: #7C40FF;
+        text-align: center;
+        border-bottom: 3px double #7C40FF;
+        padding: 0 8vw;
+        font-size: 1rem;
+    }
+    input::-webkit-calendar-picker-indicator {
+        background-color: #56F85B;
+        padding: 1.5vh;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    input::-webkit-datetime-edit{
+        background-color: #fff;
+        border-radius: 30px;
+        color: #222;
+        padding: 1vh 0;
+    }
+    button{
+        @include dimension(50vw, auto);
+        padding: 1vh 0;
+        outline: none;
+        background-color: #7C40FF;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 400ms;
+        font-size: 1rem;
+        border: 1px solid #1e1e1e;
+        &:hover{
+            background-color: #1e1e1e;
+        }
+    }
+}
+
+footer{
+    background-color: #1e1e1e;
+    @include dimension(100vw, 10vh);
+    @include flex();
+    flex-direction: column;
+    a{
+        text-decoration: none;
+        color: #7C40FF;
+        cursor: pointer;
+    }
+    p{
+        color: #fff;
+        i{
+            color: #ff0000;
+        }
+    }
+}
