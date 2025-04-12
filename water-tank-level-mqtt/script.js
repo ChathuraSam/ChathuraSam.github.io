@@ -9,7 +9,7 @@ google.charts.setOnLoadCallback(drawChart);
  */
 const clientId = "mqttjs_" + Math.random().toString(16).substring(2, 8);
 const connectUrl =
-  "wss://00292c2d29724ec08a8ce3ea4f399dc6.s1.eu.hivemq.cloud:8884/mqtt";
+  "ws://00292c2d29724ec08a8ce3ea4f399dc6.s1.eu.hivemq.cloud:8884/mqtt";
 
 const options = {
   keepalive: 60,
